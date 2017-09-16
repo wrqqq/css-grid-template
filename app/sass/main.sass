@@ -133,6 +133,59 @@
 	grid-column: 1 / 5
 	padding: $gutter $gutter 50px
 
+.container 
+	max-width: 1200px
+	margin: auto
+	padding: 0 $gutter
+.landing-section
+	padding: 80px 0
+	h2 
+		font-size: 34px
+		font-weight: 800
+		color: $dark
+		line-height: 1.2
+.section-ready
+	background-color: $light
+	.container
+		grid-template-columns: 1fr 1fr
 
+.ready-left
+	border-right: 1px solid #dadada
+	font-size: 18px
+	padding:
+		top: 60px
+		bottom: 60px
+		right: 60px
+	h2
+		margin-top: 0
+		margin-bottom: 40px
+.ready-right
+	padding-left: 40px
+
+.form-section
+	padding: 30px 0
+	background-color: $dark
+	input
+		background-color: lighten($dark, 6%)
+	form 
+		grid-gap: $gutter
+		grid-template-columns: repeat(4, 1fr)
+	.button	
+		font-size: 17px
+		padding: 14.5px
+		width: 100%
+
+input, textarea
+	border: none
+	padding: 15px 20px
+	width: 100%
+	font-family: Arial, sans-serif
+	font-style: italic
+	outline: none
+	transition: background-color .25s ease
+	&:focus
+		background-color: $light
+	&::placeholder
+		color: ligten($dark, 20%)
 
 @import "media" // Всегда в конце
